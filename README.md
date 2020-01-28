@@ -4,7 +4,7 @@ Queries for the WooCommerce Action Scheduler 3.0.
 
 ## WooCommerce Subscriptions
 
-## Finding schedule for renewals
+### Finding schedule for renewals
 
   ```sql
   SELECT
