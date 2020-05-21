@@ -1,5 +1,5 @@
 # Testing
-SELECT *
+SELECT meta_value
 FROM wp_postmeta
 WHERE post_id IN (940765,
                   940763,
@@ -21,7 +21,8 @@ WHERE post_id IN (940765,
 ORDER BY meta_value;
 
 # Testing
-SELECT *
+SELECT scheduled_date_local,
+       scheduled_date_gmt
 FROM wp_actionscheduler_actions
 WHERE (args LIKE '%940765%'
        OR args LIKE '%940763%'
