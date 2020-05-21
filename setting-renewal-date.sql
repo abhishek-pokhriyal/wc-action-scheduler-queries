@@ -20,9 +20,7 @@ WHERE post_id IN (940765,
   AND meta_key = '_schedule_next_payment'
 ORDER BY meta_value;
 
-
 # Update query
-
 UPDATE wp_postmeta
 SET meta_value = '2020-05-21 12:00:00'
 WHERE post_id IN (940765,
@@ -43,6 +41,8 @@ WHERE post_id IN (940765,
                   940511)
   AND meta_key = '_schedule_next_payment'
 ORDER BY meta_value;
+
+# --------------------------------------------------------------------------------
 
 
 # Testing
@@ -70,7 +70,6 @@ ORDER BY scheduled_date_gmt;
 
 
 # Update query
-
 UPDATE wp_actionscheduler_actions
 SET scheduled_date_local = '2020-05-21 07:00:00',
        scheduled_date_gmt = '2020-05-21 12:00:00'
