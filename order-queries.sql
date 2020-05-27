@@ -1,4 +1,5 @@
 # Count the number of line items for some orders.
+# -----------------------------------------------
 # In the below example, I've used a sub-query to find out
 # all the subscriptions that were created after a particular time.
 # That sub-query can be modified, however you want, keeping in mind that
