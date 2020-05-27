@@ -2,8 +2,8 @@
 # -----------------------------------------------
 # In the below example, I've used a sub-query to find out
 # all the subscriptions that were created after a particular time.
-# That sub-query can be modified, however you want, keeping in mind that
-# it's output should be a single column with multiple rows containing order IDs.
+# That sub-query can be modified however you want, keeping in mind that
+# it's output should be a one column with multiple rows (each row being an order ID).
 
 SELECT order_id,
        count(*)
